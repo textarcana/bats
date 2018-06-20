@@ -3,6 +3,8 @@ set -e
 set -E
 set -T
 
+export BATS_TEST_SKIPPED=
+
 BATS_COUNT_ONLY=""
 if [ "$1" = "-c" ]; then
   BATS_COUNT_ONLY=1
